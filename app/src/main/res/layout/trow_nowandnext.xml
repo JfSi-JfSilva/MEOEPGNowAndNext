@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/tableRow101"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:padding="5dp">
+
+    <RelativeLayout
+        android:id="@+id/rellTablerow"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/rcontlablerow"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imgVFolder"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:layout_constraintDimensionRatio="16:9"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvChannel"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                app:layout_constraintLeft_toRightOf="@+id/imgVFolder"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="12sp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintRight_toRightOf="parent"
+                android:gravity = "center_vertical|left|start" />
+
+            <TextView
+                android:id="@+id/tvShowNow"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                app:layout_constraintLeft_toRightOf="@+id/imgVFolder"
+                app:layout_constraintTop_toBottomOf="@+id/tvChannel"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="16sp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintRight_toRightOf="parent"
+                android:gravity = "center_vertical|left|start" />
+
+            <TextView
+                android:id="@+id/tvShowNext"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                app:layout_constraintLeft_toRightOf="@+id/imgVFolder"
+                app:layout_constraintTop_toBottomOf="@+id/tvShowNow"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="14sp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintRight_toRightOf="parent"
+                android:gravity = "center_vertical|left|start" />
+
+            <android.support.constraint.Guideline
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/guideline"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.5"/>
+
+        </android.support.constraint.ConstraintLayout>
+
+    </RelativeLayout>
+
+</TableRow>
+

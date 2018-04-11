@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">NowAndNext</string>
+    <string name="icon_drop_up">Pressione para ver canais anteriores</string>
+    <string name="icon_drop_down">Pressione para ver os próximos canais</string>
+    <string name="icon_refresh">Pressione para atualizar os canais</string>
+    <string name="loading">Carregando, aguarde...</string>
+</resources>
